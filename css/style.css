@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0x;
+    padding: 0px;
+}
+:root{
+    --width:700px;
+    --height:300px;
+}
+.zoomContainer .source{
+  width: var(--width);
+  height: var(--height);
+  background-image: url("../pics/pic1.jpg");
+  background-size: var(--width) var(--height);
+  margin: 5px auto;
+  position: relative;
+  
+}
+.zoomContainer .source .lens{
+    width: 70px;
+    height: 70px;
+    border: 2px solid;
+    position: absolute;
+}
+.zoomContainer .result{
+    width: var(--height);
+    height: var(--height);
+    border: solid;
+    margin: 5px auto;
+}
